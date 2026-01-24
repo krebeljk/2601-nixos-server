@@ -111,8 +111,8 @@
   443
   61892 # ngnix proy manager for ssh stream to forgejo
   8080 # nextcloud (docker)
-  9051 # forgejo
-  222  # forgejo ssh
+  #9051 # forgejo
+  #222  # forgejo ssh
   ];
   # because of ngnix proxy manager allow ports below 1024
   boot.kernel.sysctl = {
@@ -120,7 +120,7 @@
   };
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
+  networking.firewall.enable = true;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
