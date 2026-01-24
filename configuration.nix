@@ -91,6 +91,8 @@
       X11Forwarding = false;
       UsePAM = true;
       AllowUsers = [ "tehnoplast" ];
+      MaxAuthTries = 3;
+      LoginGraceTime = "20s";
     };
   };
 
