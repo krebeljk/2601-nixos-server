@@ -126,6 +126,17 @@
 
   networking.enableIPv6 = false;
 
+  # updating
+  system.autoUpgrade = {
+  enable = true;
+  flags = [
+    "--print-build-logs"
+  ];
+  dates = "02:00";
+  randomizedDelaySec = "45min";
+  allowReboot = false;  # Set to true if you want automatic reboots
+};
+
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave
