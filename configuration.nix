@@ -101,7 +101,7 @@
       ChallengeResponseAuthentication = false;
       X11Forwarding = false;
       UsePAM = true;
-      AllowUsers = [ "tehnoplast" ];
+      AllowUsers = [ "tehnoplast" "git"];
       MaxAuthTries = 3;
       LoginGraceTime = "20s";
     };
