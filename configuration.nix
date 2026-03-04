@@ -57,6 +57,17 @@
     packages = with pkgs; [];
   };
 
+  users.users.git = {
+    isSystemUser = true;
+    description = "Git repository user";
+    home = "/srv/git";
+    createHome = true;
+    group = "git";
+    shell = pkgs.git;
+  };
+
+  users.groups.git = {};
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
