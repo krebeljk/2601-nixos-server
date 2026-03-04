@@ -63,7 +63,7 @@
     home = "/srv/git";
     createHome = true;
     group = "git";
-    shell = pkgs.git;
+    shell = "${pkgs.git}/bin/git-shell";
   };
 
   users.groups.git = {};
