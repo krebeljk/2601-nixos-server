@@ -63,7 +63,7 @@
     home = "/srv/git";
     createHome = true;
     group = "git";
-    shell = "${pkgs.git}/bin/git-shell";
+    shell = pkgs.bashInteractive; #shell = "${pkgs.git}/bin/git-shell"; #second option for when not using git-access script
   };
 
   users.groups.git = {};
